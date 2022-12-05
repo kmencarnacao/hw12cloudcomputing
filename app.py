@@ -6,7 +6,7 @@ from azure.identity import DefaultAzureCredential
 
 #11/29/2021 MWC
 
-AZURE_KEY_VAULT_URL = os.environ["AZURE_KEY_VAULT_URL"]
+AZURE_KEY_VAULT_URL = "https://kmencarnacao.vault.azure.net/"
 
 credential = DefaultAzureCredential()
 client = SecretClient(vault_url=AZURE_KEY_VAULT_URL, credential=credential)
